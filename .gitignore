@@ -1,0 +1,7 @@
+checkNNGradients.m
+computeNumericalGradient.m
+debugInitializeWeights.m
+cv.mat
+data.mat
+weights.mat
+digit.jpg
