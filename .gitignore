@@ -1,7 +1,8 @@
 checkNNGradients.m
 computeNumericalGradient.m
 debugInitializeWeights.m
-cv.mat
-data.mat
-weights.mat
+plotLearningCurves.m
+*.mat
 digit.jpg
+octave-workspace
+Заметки/
