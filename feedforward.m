@@ -14,13 +14,18 @@ E = eye(output_layer_size);
 m = size(X, 1);
 Y = zeros(m,output_layer_size);
 
-for i=1:m
-  if y(i) == 0
-    Y(i,:) = E(10,:); 
-  else
-    Y(i,:) = E(y(i),:);
-  end
-end
+%for i=1:m
+%  if y(i) == 0
+%    Y(i,:) = E(10,:); 
+%  else
+%    Y(i,:) = E(y(i),:);
+%  end
+%end
+
+% !IMPORTANT! 0 is replaced by 10 because numeration begins from 1
+y(y == 0) = 10;
+Y = E(y,:);
+
 
 h1 = sigmoid([ones(m, 1) X] * Theta1');
 h2 = sigmoid([ones(m, 1) h1] * Theta2');
