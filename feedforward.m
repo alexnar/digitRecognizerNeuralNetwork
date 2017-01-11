@@ -22,7 +22,7 @@ Y = zeros(m,output_layer_size);
 %  end
 %end
 
-% !IMPORTANT! 0 is replaced by 10 because numeration begins from 1
+% !IMPORTANT! 0 is replaced by 10 because numeration in begins from 1
 y(y == 0) = 10;
 Y = E(y,:);
 

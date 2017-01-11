@@ -1,7 +1,8 @@
 function p = predict(Theta1, Theta2, X)
 % Predict the label of trained neural network by given input
 
-X = featureScaling(X);
+%X = featureScaling(X);
+% X = X/255;
 
 m = size(X, 1);
 num_labels = size(Theta2, 1);
@@ -19,6 +20,7 @@ for i=1:m
   [val index] = max(a3);
   p(i) = index;
 end
+p(p == 10) = 0;
 %h1 = sigmoid([ones(m, 1) X] * Theta1');
 %h2 = sigmoid([ones(m, 1) h1] * Theta2');
 %[dummy, p] = max(h2, [], 2);

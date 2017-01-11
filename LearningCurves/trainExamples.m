@@ -4,11 +4,11 @@ function [error_train, error_cv] = trainExamples(X, y, Xcv, ycv, lambda, ...
                                                   output_layer_size)
 
 % m = size(X, 1);
-m = 30;
+m = 320;
 error_train = zeros(m, 1);
 error_cv   = zeros(m, 1);
 
-for i = 1:m
+for i = 300:320
   % Compute train/cross validation errors using training examples
   Xtrain = X(1:i,:);
   ytrain = y(1:i);
