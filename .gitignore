@@ -7,5 +7,6 @@ predictImg.m
 initialize.m
 *.mat
 digit.jpg
+*.png
 octave-workspace
 Заметки/

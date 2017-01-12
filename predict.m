@@ -21,5 +21,6 @@ for i=1:m
   p(i) = index;
 end
 
+p(p == 10) = 0;
 
 end
