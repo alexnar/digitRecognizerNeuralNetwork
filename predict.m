@@ -20,10 +20,6 @@ for i=1:m
   [val index] = max(a3);
   p(i) = index;
 end
-p(p == 10) = 0;
-%h1 = sigmoid([ones(m, 1) X] * Theta1');
-%h2 = sigmoid([ones(m, 1) h1] * Theta2');
-%[dummy, p] = max(h2, [], 2);
 
 
 end

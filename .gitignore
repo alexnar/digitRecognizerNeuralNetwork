@@ -2,6 +2,9 @@ checkNNGradients.m
 computeNumericalGradient.m
 debugInitializeWeights.m
 plotLearningCurves.m
+displayDigit.m
+predictImg.m
+initialize.m
 *.mat
 digit.jpg
 octave-workspace

@@ -14,14 +14,6 @@ E = eye(output_layer_size);
 m = size(X, 1);
 Y = zeros(m,output_layer_size);
 
-%for i=1:m
-%  if y(i) == 0
-%    Y(i,:) = E(10,:); 
-%  else
-%    Y(i,:) = E(y(i),:);
-%  end
-%end
-
 % !IMPORTANT! 0 is replaced by 10 because numeration in begins from 1
 y(y == 0) = 10;
 Y = E(y,:);

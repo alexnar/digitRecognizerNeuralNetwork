@@ -15,9 +15,6 @@ J = 0;
 
 [J Y] = feedforward(X, y, Theta1, Theta2, lambda, output_layer_size);
 
-
-% ==== Backpropagation ==== 
-
 grad = backpropagation(X, Theta1, Theta2, Y, lambda, ...
                input_layer_size, hidden_layer_size, output_layer_size);
 

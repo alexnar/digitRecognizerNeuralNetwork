@@ -7,8 +7,8 @@ m = size(X, 1);
 error_train = zeros(m, 1);
 error_cv   = zeros(m, 1);
 
+% Compute train/cross validation errors using training examples
 for i = 1:m
-  % Compute train/cross validation errors using training examples
   Xtrain = X(1:i,:);
   ytrain = y(1:i);
   [Theta1 Theta2 cost] = trainNN(Xtrain,ytrain,lambda, input_layer_size, hidden_layer_size, output_layer_size);
